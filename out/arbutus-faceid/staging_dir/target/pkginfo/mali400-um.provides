@@ -1,0 +1,14 @@
+disp.ko
+libEGL.so
+libEGL.so.1
+libEGL.so.1.4
+libGLESv1_CM.so
+libGLESv1_CM.so.1
+libGLESv1_CM.so.1.1
+libGLESv2.so
+libGLESv2.so.2
+libGLESv2.so.2.0
+libMali.so
+libc.so
+libgcc_s.so.1
+mali.ko

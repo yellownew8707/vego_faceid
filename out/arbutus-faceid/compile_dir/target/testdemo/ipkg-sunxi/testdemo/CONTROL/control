@@ -1,0 +1,8 @@
+Package: testdemo
+Version: 1-1
+Depends: libc, standby, libcutils, libutils, media-server, wifiswitch, libfaceid
+Source: package/vego/testdemo
+Section: utils
+Architecture: sunxi
+Installed-Size: 11341
+Description:  CedarX2.6 recorder

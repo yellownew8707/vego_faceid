@@ -1,0 +1,14 @@
+./
+./usr
+./usr/include
+./usr/include/stack_alloc.h
+./usr/include/speex_config_types.h
+./usr/include/resampler.h
+./usr/include/speex_resampler.h
+./usr/include/os_support.h
+./usr/include/fixed_generic.h
+./usr/include/arch.h
+./usr/include/speex_types.h
+./usr/lib
+./usr/lib/libspeex-lite.so
+./host

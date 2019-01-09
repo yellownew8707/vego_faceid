@@ -1,0 +1,9 @@
+./
+./usr
+./usr/include
+./usr/include/graphics.h
+./usr/include/minui.h
+./usr/include/font_10x18.h
+./lib
+./lib/libminui.so
+./host

@@ -1,0 +1,17 @@
+./
+./usr
+./usr/include
+./usr/include/sysutils
+./usr/include/sysutils/SocketListener.h
+./usr/include/sysutils/SocketClientCommand.h
+./usr/include/sysutils/List.h
+./usr/include/sysutils/SocketClient.h
+./usr/include/sysutils/FrameworkCommand.h
+./usr/include/sysutils/ServiceManager.h
+./usr/include/sysutils/NetlinkListener.h
+./usr/include/sysutils/FrameworkClient.h
+./usr/include/sysutils/NetlinkEvent.h
+./usr/include/sysutils/FrameworkListener.h
+./usr/lib
+./usr/lib/libsysutils.so
+./host

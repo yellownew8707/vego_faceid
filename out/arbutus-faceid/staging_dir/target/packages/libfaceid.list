@@ -1,0 +1,7 @@
+./
+./usr
+./usr/include
+./usr/include/tv_sdk_api.h
+./usr/lib
+./usr/lib/libfaceid.so
+./host

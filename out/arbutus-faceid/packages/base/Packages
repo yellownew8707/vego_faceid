@@ -1,0 +1,96 @@
+Package: libatomic
+Version: 5.2.0-1
+Depends: libgcc
+Source: package/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: sunxi
+Installed-Size: 4384
+Filename: libatomic_5.2.0-1_sunxi.ipk
+Size: 5085
+MD5Sum: 36a865ddc9c56b9f377c7066b173eba9
+SHA256sum: dd57c9ac8cd4fd15980c4c87745a3be436996e130af8cd2256d1540c40e231d8
+Description:  Atomic support library
+
+Package: libgcc
+Version: 5.2.0-1
+Source: package/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: sunxi
+Installed-Size: 17200
+Filename: libgcc_5.2.0-1_sunxi.ipk
+Size: 17948
+MD5Sum: 63115fb164f0322bb7f4f86f9d61450e
+SHA256sum: b287354ca099e4fe3a11ded94c68990ddfd02094696ef119bb6fd553fb00af04
+Description:  GCC support library
+
+Package: libpthread
+Version: 1.1.14-1
+Depends: libgcc
+Source: package/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: sunxi
+Installed-Size: 126
+Filename: libpthread_1.1.14-1_sunxi.ipk
+Size: 869
+MD5Sum: c86453f6a4dad862496d6c019b4559af
+SHA256sum: 78e1ddc8c67e749e5bbfa68cc3b6c49fd0533ebbbb0d4eae979e31494117fd5d
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.14-1
+Depends: libpthread
+Source: package/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: sunxi
+Installed-Size: 126
+Filename: librt_1.1.14-1_sunxi.ipk
+Size: 878
+MD5Sum: daadabe73bac0d9a80417e1c5e97038e
+SHA256sum: ae0f2ca831795929237292b5464c07a8a8f934ec0f0c4c3dbe28bdf6e1b72c0e
+Description:  POSIX.1b RealTime extension library
+
+Package: libstdcpp
+Version: 5.2.0-1
+Source: package/toolchain
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: sunxi
+Installed-Size: 295980
+Filename: libstdcpp_5.2.0-1_sunxi.ipk
+Size: 293565
+MD5Sum: 3721e9fdf542bac3a92be7c618883ad2
+SHA256sum: e3b4b654a0fecfb6d8c671c77ae7d80cdd0f8752a3841533a46dadab2a0e81a3
+Description:  GNU Standard C++ Library v3
+
+Package: testdemo
+Version: 1-1
+Depends: libc, standby, libcutils, libutils, media-server, wifiswitch, libfaceid
+Source: package/vego/testdemo
+Section: utils
+Architecture: sunxi
+Installed-Size: 11341
+Filename: testdemo_1-1_sunxi.ipk
+Size: 12056
+MD5Sum: 1d4df169b2644e7b41e3f6d13b29df65
+SHA256sum: ab2fa90a6a3219784c73d43ade313594c60aec001f1eb0ab99b022eecc53ec0c
+Description:  CedarX2.6 recorder
+
