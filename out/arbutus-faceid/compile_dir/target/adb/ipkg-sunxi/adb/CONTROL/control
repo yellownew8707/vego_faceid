@@ -1,0 +1,8 @@
+Package: adb
+Version: 0.0.1-1
+Depends: libc, libpthread, liballwinner-base
+Source: package/vego/adb
+Section: utils
+Architecture: sunxi
+Installed-Size: 24440
+Description:  it comes form Android 4.2!!
