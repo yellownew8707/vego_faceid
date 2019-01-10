@@ -150,7 +150,7 @@ void *faceIDDataDet(void *param) {
 	}
 	dev_init(face_detect_callback, NULL,0, 0, 0, NULL, 0, 0);
 	printf("%s,l:%d\n", __FUNCTION__, __LINE__);
-	dev_setCallBackFreq(0, 30);
+	dev_setCallBackFreq(0, 90);
 	printf("version:%s\n", dev_getSysVersion());
 	while(1) {
 		if (capturing == 0)
