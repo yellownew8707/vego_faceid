@@ -1,4 +1,4 @@
-cmd_scripts/basic/fixdep := gcc -Wp,-MD,scripts/basic/.fixdep.d -O2 -I/home/huangxin/workspace/vyagoo_faceid_public/Vego-SDK-arbutus-faceid.Linux-x86_64/out/host/include -I/home/huangxin/workspace/vyagoo_faceid_public/Vego-SDK-arbutus-faceid.Linux-x86_64/out/host/usr/include  -Wall -Wmissing-prototypes -Wstrict-prototypes   -I/home/huangxin/workspace/vyagoo_faceid_public/Vego-SDK-arbutus-faceid.Linux-x86_64/out/host/include  -o scripts/basic/fixdep scripts/basic/fixdep.c  
+cmd_scripts/basic/fixdep := gcc -Wp,-MD,scripts/basic/.fixdep.d -O2 -I/home/huangxin/workspace/vego/out/host/include -I/home/huangxin/workspace/vego/out/host/usr/include  -Wall -Wmissing-prototypes -Wstrict-prototypes   -I/home/huangxin/workspace/vego/out/host/include  -o scripts/basic/fixdep scripts/basic/fixdep.c  
 
 source_scripts/basic/fixdep := scripts/basic/fixdep.c
 
@@ -19,8 +19,8 @@ deps_scripts/basic/fixdep := \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/time.h \
   /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
-  /home/huangxin/workspace/vyagoo_faceid_public/Vego-SDK-arbutus-faceid.Linux-x86_64/out/host/include/endian.h \
-  /home/huangxin/workspace/vyagoo_faceid_public/Vego-SDK-arbutus-faceid.Linux-x86_64/out/host/include/byteswap.h \
+  /home/huangxin/workspace/vego/out/host/include/endian.h \
+  /home/huangxin/workspace/vego/out/host/include/byteswap.h \
   /usr/include/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
@@ -31,7 +31,7 @@ deps_scripts/basic/fixdep := \
   /usr/include/x86_64-linux-gnu/bits/sigset.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/select2.h \
-  /home/huangxin/workspace/vyagoo_faceid_public/Vego-SDK-arbutus-faceid.Linux-x86_64/out/host/include/sys/sysmacros.h \
+  /home/huangxin/workspace/vego/out/host/include/sys/sysmacros.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/sys/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
