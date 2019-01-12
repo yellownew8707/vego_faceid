@@ -38,9 +38,9 @@ endef
 
 define Package/testdemo/install
 	$(INSTALL_DIR) $(1)/usr/bin/
-	$(INSTALL_DIR) $(1)/etc/init.d
+#	$(INSTALL_DIR) $(1)/etc/init.d
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/testdemo $(1)/usr/bin 
-	$(CP) zuluko.init $(1)/etc/init.d/zuluko
+#	$(CP) zuluko.init $(1)/etc/init.d/zuluko
 endef
 
 $(eval $(call BuildPackage,testdemo))
