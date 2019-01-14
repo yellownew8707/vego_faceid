@@ -5,3 +5,37 @@ included with OpenWrt.
 
 To use it, just put your buildroot-compatible package directory
 in the subdir 'package/' and run 'make' from this directory.
+
+
+==================================================================
+==================================================================
+host sdk code download:
+1. git clone https://github.com/yellownew8707/vego_faceid.git
+
+2.vego root path compile:
+source build/envsetup.sh
+lunch
+	You're building on Linux
+
+Lunch menu... pick a combo:
+     1. arbutus_faceid-vego
+
+Which would you like?1
+
+make -j32
+pack
+
+3.use PhoenixSuit download firmware to vego host board.
+
+4.testdemo
+
+adb shell
+
+./testdemo
+
+softap wifi:zuluko
+
+vlc rtsp route:
+	rtsp://192.168.5.1:8554
+
+
