@@ -446,18 +446,18 @@ int comm_device_get_body_num(){
 
 int comm_device_face_get_attention(int index){
 	LOG("comm_device_face_get_attention\n");
-	if (index >= comm_handle.ucpf_ext.num) {
+	if (index >= comm_handle.ucpf.num) {
 		return -1;
 	}
-	return comm_handle.ucpf_ext.attention[index];
+	return comm_handle.ucpf.attention[index];
 }
 
 int comm_device_face_get_emotion(int index){
 	LOG("comm_device_face_get_emotion\n");
-	if (index >= comm_handle.ucpf_ext.num) {
+	if (index >= comm_handle.ucpf.num) {
 		return -1;
 	}
-	return comm_handle.ucpf_ext.emotion[index];
+	return comm_handle.ucpf.emotion[index];
 }
 
 int comm_device_face_get_fr_feature(int index, float *feature){
@@ -480,41 +480,41 @@ int j = 0;
 int comm_device_face_get_age(int index){
 
 	LOG("comm_device_face_get_age\n");
-	if (index >= comm_handle.ucpf_ext.num) {
+	if (index >= comm_handle.ucpf.num) {
 		return -1;
 	}
-	return comm_handle.ucpf_ext.age[index];
+	return comm_handle.ucpf.age[index];
 }
 
 int comm_device_face_get_gender(int index){
 	LOG("comm_device_face_get_gender\n");
-	if (index >= comm_handle.ucpf_ext.num) {
+	if (index >= comm_handle.ucpf.num) {
 		return -1;
 	}
-	return comm_handle.ucpf_ext.gender[index];
+	return comm_handle.ucpf.gender[index];
 }
 
 int comm_device_get_faceid(int index){
 	LOG("comm_device_face_get_gender\n");
-	if (index >= comm_handle.ucpf_ext.num) {
+	if (index >= comm_handle.ucpf.num) {
 		return -1;
 	}
-	return comm_handle.ucpf_ext.ids[index];
+	return comm_handle.ucpf.ids[index];
 }
 
 int* comm_device_get_face_rect(int index){
 	int data[4];
 	LOG("comm_device_get_face_rect\n");
-	if (index >= comm_handle.ucpf_ext.num) {
+	if (index >= comm_handle.ucpf.num) {
 		return NULL;
 	}
-	return &comm_handle.ucpf_ext.rect[index];
+	return &comm_handle.ucpf.rect[index];
 }
 
 int comm_device_get_face_num(){
 	
 	LOG("comm_device_get_face_num\n");
-	return comm_handle.ucpf_ext.num;
+	return comm_handle.ucpf.num;
 }
 
 int comm_device_unregister_faceid(int id){
@@ -680,11 +680,11 @@ static void *comm_service_thread_handle(void *arg) {
 	int ret = 0;
 	int sleep_time = 0;
     int event = 0;
-	memset(&comm_handle.ucpf_ext, 0, sizeof(struct usb_comm_protocol));
+	memset(&comm_handle.ucpf, 0, sizeof(struct usb_comm_protocol));
 	
 	while (!comm_handle.comm_service_thread_exit) {
 		if (comm_handle.release == 0) {
-            ret = comm_device_get_face_info_ext();
+            ret = comm_device_get_face_info();
 		    if (ret > 0) {
 		        event = 1;
 		    } else {
